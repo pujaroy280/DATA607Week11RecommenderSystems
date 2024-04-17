@@ -1,0 +1,82 @@
+---
+title: "Discussion 4 - Week 11: Recommender Systems"
+author: "Puja Roy"
+date: "4/7/24"
+output: openintro::lab_report
+---
+
+### New York Times Recommendation Engine Scenario Design Analysis
+
+Your task is to analyze an existing recommender system that you find interesting.  You should:
+
+- Perform a Scenario Design analysis as described below.  Consider whether it makes sense for your selected recommender system to perform scenario design twice, once for the organization (e.g. Amazon.com) and once for the organization's customers.
+
+- Attempt to reverse engineer what you can about the site, from the site interface and any available information that you can find on the Internet or elsewhere.
+
+- Include specific recommendations about how to improve the site's recommendation capabilities going forward. 
+
+### Who are your target users?
+The target users of the New York Times Recommendation Engine are:
+
+- Regular Readers: People who frequently visit the New York Times Website or app to explore news and articles across various topics.
+
+- Casual Readers: Users who utilize the New York Times occasionally or are interested in visiting the app when they are searching for their interests.
+
+- New Readers: People who are new to utilizing the New York Times platform and are not aware of certain preferences.
+
+### What are their key goals?
+- Finding relevant content: Users want to discover articles that match their interests,preferences including news updates, oped pieces, feature stories, or niche topics.
+- Exploration and Discovery: Users aim to explore new topics, perspectives from op ed pieces, and authors that they were not aware of or expanding their knowledge on other topics.
+- Bookmark or save for later: Users may want to save articles they find interesting to read later or reference in the future, either for personal enjoyment or professional purposes.
+- Personalized Browsing Interests: Users enjoy personalized browsing where recommendations align with their reading habits, preferences, and interests.
+
+### Reverse Engineering of the Platform
+
+In efforts of New York Times recommendation system, you can analyze its website interface and gather information from available sources on the internet:
+
+User Interface Analysis:
+
+- The New York Times website features a "Recommended for You" section on the homepage or within the user's account settings.
+
+- Users may also encounter personalized recommendations interspersed throughout the site, such as in the sidebar or at the end of articles.
+
+- Recommendations may be based on browsing history, saved articles, user preferences (if provided), and demographic information.
+
+Information from Available Sources:
+
+- The New York Times has published articles and blog posts discussing their approach to recommendation systems and personalization.
+
+- STEM blogs and presentations by New York Times Software Developers may provide insights into the technology and algorithms used for recommendation.
+
+- Interviews with New York Times staff, such as Data Scientists or Product Managers, might offer insights into the goals and strategies behind their recommendation system.
+
+### Recommender System Algorithms 
+
+1. Collaborative Filtering:
+
+- Algorithm: Collaborative filtering methods recommend items based on the preferences and behavior of similar users. This can be user-based or item-based.
+
+- Data Preparation: User-item interaction data, such as clicks, views, and saves, would be collected and organized into a user-item matrix. The matrix could be sparse, with rows representing users and columns representing articles. Missing values indicate articles not interacted with by users.
+
+2. Content-Based Filtering:
+
+- Algorithm: Content-based filtering recommends items similar to those the user has interacted with in the past, based on item attributes or content.
+
+- Data Preparation: Article metadata, such as title, author, section, keywords, and text content, would be extracted and transformed into feature vectors. Techniques like TF-IDF (Term Frequency-Inverse Document Frequency) or word embeddings (e.g., Word2Vec, GloVe) could be used to represent articles as numerical vectors.
+
+3. Deep Learning Models:
+
+- Algorithm: Deep learning models, such as neural networks, can learn complex patterns from user-item interaction data and article content.
+
+- Data Preparation: Deep learning models require extensive preprocessing of data, including encoding categorical features (e.g., article category), handling text data (e.g., tokenization, embedding), and possibly sequence modeling for temporal patterns in user behavior.
+
+### How can you help them accomplish those goals?
+To help users accomplish their goals, the New York Times Recommendation Engine can implement the following strategies:
+
+- Personalized Recommendations: Engineers can leverage various machine learning algorithms to analyze user behavior, preferences, and reading history to provide personalized article recommendations tailored to each user's interests.
+- Diverse Content Suggestions: Offer a diverse range of content recommendations spanning various topics, sections, authors, and publication dates to cater to different user interests and preferences.
+- Bookmarking Features: Provide users with the ability to bookmark or save articles to their account, allowing them to easily access and revisit saved content at their convenience.
+
+
+
+
